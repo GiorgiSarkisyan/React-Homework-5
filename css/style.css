@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    background: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    user-select: none;
+}
+.main-page-container{
+    width: 962px;
+    height: 636px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-page-title{
+    color: #007FDB;
+    font-family: Inter;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+.toDo-container{
+    width: 430px;
+    height:636px;
+    background: #fff;
+}
+.toDo-background{
+    width: 430px;
+    height: 202px;
+    background: url(../img/87c71038638480240b581fd1875afe7e.jpeg);
+    background-size:cover ;
+    position: relative;
+}
+.toDo-time{
+    color: #FFF;
+    font-family: "RussoOne";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.toDo-day{
+    color: #FFF;
+    font-family: 'RussoOne';
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    right: 20px;
+    bottom: 55px;
+}
+.toDo-input-side{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.toDo-input-box{
+    width: 275px;
+    height: 50px;
+    border-radius: 5px;
+    background: #EBEFF2;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.toDo-input{
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #888;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 220px;
+    height: 100%;
+}
+.toDo-input-verification{
+    width: 24px;
+    height: 24px;
+    background: url(../img/akar-icons_circle.svg);
+}
+.toDo-input-button{
+    width: 88px;
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #20EEB0;
+    outline: none;
+    border: none;
+    transition: 0.15s;
+}
+.toDo-input-button.active{
+    border: 1px solid #20EEB0;
+    background-color: white;
+}
+.input-img{
+    stroke:white;
+    transition: 0.15s;
+}
+.input-img.active path{
+    stroke: #20EEB0;
+}
+.toDo-main{
+    height: 434px;
+}
+.toDo-frame-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y:scroll;
+    gap: 23px   ;
+    height: 320px;
+}
+.toDo-frame{
+    width: 375px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.toDo-frame-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.toDo-frame-info-todo{
+    color: #0D0D0D;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.toDo-frame-info-time{
+    color: #888;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.checkbox{
+    width: 30px;
+    height: 30px;
+}
+.delete-button{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.delete-button svg{
+    width: 30px;
+    height: 30px;
+}
+.toDo-frame-checkBox{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.delete-button{
+    width: 30px;
+    height: 30px;
+}
+.checkbox.active path:first-child{
+    fill: #20EEB0;
+}
+.toDo-frame-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
